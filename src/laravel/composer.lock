@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "adb4b680144df947b976ddb89b6572b1",
+    "content-hash": "7ebe9d38d2fef3eb8b6864ffaf37cadc",
     "packages": [
+        {
+            "name": "a3naumov/laravel-astrolens",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "/app/packages/laravel-astrolens",
+                "reference": "d81942710097371786896ed39ed4f408dea816bb"
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "A3Naumov\\Astrolens\\AstrolensServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "A3Naumov\\Astrolens\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Artem Naumov",
+                    "email": "naumovartem272@gmail.com"
+                }
+            ],
+            "description": "Laravel admin panel with a focus on simplicity and ease of use.",
+            "keywords": [
+                "astrolens",
+                "laravel"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": false
+            }
+        },
         {
             "name": "brick/math",
             "version": "0.12.3",
@@ -9025,7 +9068,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
